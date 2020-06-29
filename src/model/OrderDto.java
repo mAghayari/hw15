@@ -4,7 +4,7 @@ import util.Utility;
 
 import java.util.Date;
 
-public class CartDto {
+public class OrderDto {
     private Date date;
     private String orderedItems;
 
@@ -20,7 +20,7 @@ public class CartDto {
         return orderedItems;
     }
 
-    public void setCartItems(String orderedItems) {
+    public void setOrderItems(String orderedItems) {
         this.orderedItems = orderedItems;
     }
 

@@ -1,24 +1,24 @@
 package services;
 
 import dao.ProductDao;
-import model.CartItem;
+import model.OrderItem;
 import model.Product;
 
 import java.util.List;
 
 public class ProductServices {
 
-    public void getASoledItemBack(CartItem cartItem) {
+    public void getASoledItemBack(OrderItem orderItem) {
         ProductDao productDao = new ProductDao();
-        Product product = cartItem.getProduct();
+        Product product = orderItem.getProduct();
 
-        product.setStock(cartItem.getCount() + product.getStock());
+        product.setStock(orderItem.getCount() + product.getStock());
         productDao.updateProduct(product);
     }
 
-    public void getAllSoledItemsBack(List<CartItem> cartItems) {
-        for (CartItem cartItem : cartItems) {
-            getASoledItemBack(cartItem);
+    public void getAllSoledItemsBack(List<OrderItem> orderItems) {
+        for (OrderItem orderItem : orderItems) {
+            getASoledItemBack(orderItem);
         }
     }
 }

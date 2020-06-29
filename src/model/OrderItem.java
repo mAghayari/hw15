@@ -1,7 +1,7 @@
 package model;
 
-public class CartItem {
-    private Cart cart;
+public class OrderItem {
+    private Order order;
     private Product product;
     private int count;
 
@@ -22,12 +22,12 @@ public class CartItem {
         this.count = count;
     }
 
-    public Cart getCart() {
-        return cart;
+    public Order getOrder() {
+        return order;
     }
 
-    public void setCart(Cart cart) {
-        this.cart = cart;
+    public void setOrder(Order order) {
+        this.order = order;
     }
 
     @Override

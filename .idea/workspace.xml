@@ -2,35 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="547c34bd-2dae-4df4-a7f5-3576049c4f86" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dao/AdminDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/AdminDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dao/CartDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/CartDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dao/CustomerDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/CustomerDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dao/ProductDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/ProductDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/admin/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Admin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/cart/Cart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Cart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/cart/CartDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/CartDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/cart/CartItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/CartItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/customer/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Address.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/customer/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/customer/CustomerDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/CustomerDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/log/OperationLog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/OperationLog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/product/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/product/ProductCategory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/ProductCategory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/AdminServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/AdminServices.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/CartServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/CartServices.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/CustomerServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/CustomerServices.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dao/CartDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/OrderDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Cart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/CartDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/OrderDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/CartItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/OrderItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/OperationLog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/OperationLog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/CartServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/OrderServices.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/services/OperationLogServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/OperationLogServices.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/services/ProductServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/ProductServices.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/AdminView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/AdminView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/CartItemView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/CartItemView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/CartView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/CartView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/CustomerView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/CustomerView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/GetUserInputs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/GetUserInputs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/CartItemView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/OrderItemView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/CartView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/OrderView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/view/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/OperationLogView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/OperationLogView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/ProductView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/ProductView.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,26 +91,44 @@
       <workItem from="1593280844292" duration="860000" />
       <workItem from="1593286485659" duration="168000" />
       <workItem from="1593427143712" duration="670000" />
-      <workItem from="1593428626966" duration="238000" />
+      <workItem from="1593428626966" duration="1892000" />
+      <workItem from="1593439939545" duration="26000" />
+      <workItem from="1593442906665" duration="571000" />
     </task>
+    <task id="LOCAL-00001" summary="change packaging">
+      <created>1593428973093</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1593428973093</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="change packaging" />
+    <option name="LAST_COMMIT_MESSAGE" value="change packaging" />
   </component>
   <component name="WindowStateProjectService">
     <state x="390" y="59" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1592825721245">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="390" y="59" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1592825721245" />
-    <state x="464" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1592820557146">
+    <state x="218" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1593443255874">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="464" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824@0.0.1536.824" timestamp="1592820557146" />
+    <state x="218" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824@0.0.1536.824" timestamp="1593443255874" />
     <state x="499" y="163" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1593428791301">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="163" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1593428791301" />
+    <state x="406" y="10" key="CommitChangelistDialog2" timestamp="1593428970311">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="406" y="10" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1593428970311" />
     <state x="473" y="158" key="FileChooserDialogImpl" timestamp="1592839079023">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

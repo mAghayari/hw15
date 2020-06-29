@@ -10,13 +10,13 @@ public class OperationLogServices {
 
     public OperationLog getOperationLog(Customer desiredCustomer) {
         OperationLog operationLog = new OperationLog();
-        CartServices cartServices = new CartServices();
+        OrderServices orderServices = new OrderServices();
 
         Date startDate = Utility.minusAMonth();
         Date endDate = Utility.addADay(new Date());
 
         operationLog.setCustomer(desiredCustomer);
-        operationLog.setOperation(cartServices.getCartsOfAPeriod(desiredCustomer.getId(), startDate, endDate));
+        operationLog.setOperation(orderServices.getOrdersOfAPeriod(desiredCustomer.getId(), startDate, endDate));
 
         return operationLog;
     }

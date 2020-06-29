@@ -1,19 +1,16 @@
 package model;
 
-import model.Customer;
-import model.CartDto;
-
 import java.util.ArrayList;
 
 public class OperationLog {
-    private ArrayList<CartDto> operations;
+    private ArrayList<OrderDto> operations;
     private Customer customer;
 
-    public ArrayList<CartDto> getOperation() {
+    public ArrayList<OrderDto> getOperation() {
         return operations;
     }
 
-    public void setOperation(ArrayList<CartDto> operations) {
+    public void setOperation(ArrayList<OrderDto> operations) {
         this.operations = operations;
     }
 
@@ -28,8 +25,8 @@ public class OperationLog {
     @Override
     public String toString() {
         String result = "customer with userName " + customer.getUserName() + "\n";
-        for (CartDto cartDto : operations) {
-            result += cartDto.toString();
+        for (OrderDto orderDto : operations) {
+            result += orderDto.toString();
         }
         return result;
     }

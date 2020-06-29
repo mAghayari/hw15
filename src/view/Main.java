@@ -4,21 +4,21 @@ import dao.ProductDao;
 import model.Admin;
 import model.Customer;
 import model.Product;
-import model.Cart;
-import services.CartServices;
+import model.Order;
+import services.OrderServices;
 
 import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        CartItemView cartItemView = new CartItemView();
-        CartServices cartServices = new CartServices();
+        OrderItemView orderItemView = new OrderItemView();
+        OrderServices orderServices = new OrderServices();
         CustomerView customerView = new CustomerView();
         AdminView adminView = new AdminView();
 
         while (true) {
             Customer customer;
-            Cart cart = new Cart();
+            Order order = new Order();
             Admin admin = new Admin();
             System.out.println("1)SignIn\n2)SignUp");
             int enterItem = GetUserInputs.getInBoundDigitalInput(2);
@@ -29,7 +29,7 @@ public class Main {
                     admin = adminView.adminSignIn();
                 } else {
                     customer = customerView.customerSignIn();
-                    cart.setCustomer(customer);
+                    order.setCustomer(customer);
                 }
             } else {
                 System.out.println("1-Admin SignUp\n2-User SignUp");
@@ -38,16 +38,16 @@ public class Main {
                     admin = adminView.adminSignUp();
                 } else {
                     customer = customerView.customerSignUp();
-                    cart.setCustomer(customer);
+                    order.setCustomer(customer);
                 }
             }
-            if (!Objects.equals(cart.getCustomer(), null)) {
+            if (!Objects.equals(order.getCustomer(), null)) {
                 ProductDao productDao = new ProductDao();
                 ArrayList<Product> products;
                 mainMenu:
                 while (true) {
                     System.out.println("Main Menu:");
-                    System.out.println("1-Products category's List\n2-Delete Cart Items\n3-Print Cart\n4-Finalize Cart\n5-SignOut\n6-Exit\nChoose an item:");
+                    System.out.println("1-Products category's List\n2-Delete Order Items\n3-Print Order\n4-Finalize Order\n5-SignOut\n6-Exit\nChoose an item:");
                     int mainMenuItem = GetUserInputs.getInBoundDigitalInput(6);
                     subMenu:
                     while (true) {
@@ -58,35 +58,35 @@ public class Main {
                                 int categoryItem = GetUserInputs.getInBoundDigitalInput(4);
                                 switch (categoryItem) {
                                     case 1:
-                                        cartItemView.addProductToCart(cart, productDao, products, "ELECTRONICS");
+                                        orderItemView.addProductToOrder(order, productDao, products, "ELECTRONICS");
                                         break;
                                     case 2:
-                                        cartItemView.addProductToCart(cart, productDao, products, "READINGS");
+                                        orderItemView.addProductToOrder(order, productDao, products, "READINGS");
                                         break;
                                     case 3:
-                                        cartItemView.addProductToCart(cart, productDao, products, "SHOES");
+                                        orderItemView.addProductToOrder(order, productDao, products, "SHOES");
                                         break;
                                     case 4:
                                         break subMenu;
                                 }
                                 break;
                             case 2:
-                                if (cart.getCartItems().isEmpty())
-                                    System.out.println("your Cart is empty\n");
+                                if (order.getOrderItems().isEmpty())
+                                    System.out.println("your Order is empty\n");
                                 else {
-                                    CartView cartView = new CartView();
-                                    cart = cartView.deleteOperation(cart, products);
+                                    OrderView orderView = new OrderView();
+                                    order = orderView.deleteOperation(order, products);
                                 }
                                 break subMenu;
                             case 3:
-                                CartView.printCart(cartServices, cart);
+                                OrderView.printOrder(orderServices, order);
                                 break subMenu;
                             case 4:
-                                if (cart.getCartItems().isEmpty())
-                                    System.out.println("your Cart is empty\n");
+                                if (order.getOrderItems().isEmpty())
+                                    System.out.println("your Order is empty\n");
                                 else {
-                                    CartView cartView = new CartView();
-                                    cartView.finalizeCart(cart);
+                                    OrderView orderView = new OrderView();
+                                    orderView.finalizeOrder(order);
                                 }
                                 break subMenu;
                             case 5:

@@ -14,7 +14,7 @@ public class Customer {
     private String userName;
     private String password;
     private int age;
-    List<Cart> carts = new ArrayList<>();
+    List<Order> orders = new ArrayList<>();
 
     public void setId(int id) {
         this.id = id;
@@ -88,12 +88,12 @@ public class Customer {
         this.age = age;
     }
 
-    public List<Cart> getCarts() {
-        return carts;
+    public List<Order> getOrders() {
+        return orders;
     }
 
-    public void setCarts(List<Cart> carts) {
-        this.carts = carts;
+    public void setOrders(List<Order> orders) {
+        this.orders = orders;
     }
 
     @Override
@@ -105,7 +105,7 @@ public class Customer {
                 "\nemail: " + email +
                 "\naddress: " + address +
                 "\nage: " + age +
-                "\nOrders: " + carts.toString() +
+                "\nOrders: " + orders.toString() +
                 "\n";
     }
 
