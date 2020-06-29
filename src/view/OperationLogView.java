@@ -1,8 +1,8 @@
 package view;
 
 import dao.CustomerDao;
-import model.customer.Customer;
-import model.log.OperationLog;
+import model.Customer;
+import model.OperationLog;
 import services.OperationLogServices;
 
 import java.util.Objects;

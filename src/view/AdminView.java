@@ -1,6 +1,6 @@
 package view;
 
-import model.admin.Admin;
+import model.Admin;
 import services.AdminServices;
 
 import java.util.Objects;

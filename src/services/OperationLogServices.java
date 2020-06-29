@@ -1,7 +1,7 @@
 package services;
 
-import model.customer.Customer;
-import model.log.OperationLog;
+import model.Customer;
+import model.OperationLog;
 import util.Utility;
 
 import java.util.Date;

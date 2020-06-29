@@ -1,6 +1,6 @@
 package dao;
 
-import model.admin.Admin;
+import model.Admin;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -10,7 +10,7 @@ import java.sql.SQLException;
 public class AdminDao {
 
     public Admin fetchAdmin(Admin admin) {
-        try (Connection connection = Connector.getConnection();) {
+        try (Connection connection = Connector.getConnection()) {
             String query = "SELECT* FROM `admin` WHERE adminName = ? AND password = ?";
             PreparedStatement preparedStatement = connection.prepareStatement(query);
             preparedStatement.setString(1, admin.getAdminName());

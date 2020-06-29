@@ -1,8 +1,8 @@
 package services;
 
 import dao.ProductDao;
-import model.cart.CartItem;
-import model.product.Product;
+import model.CartItem;
+import model.Product;
 
 import java.util.List;
 

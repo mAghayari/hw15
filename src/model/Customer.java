@@ -1,11 +1,8 @@
-package model.customer;
+package model;
 
-
-import model.cart.Cart;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Objects;
 
 public class Customer {
     private int id;

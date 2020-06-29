@@ -1,7 +1,4 @@
-package model.cart;
-
-import model.customer.Address;
-import model.customer.Customer;
+package model;
 
 import java.sql.Timestamp;
 import java.util.ArrayList;

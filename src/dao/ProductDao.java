@@ -1,7 +1,7 @@
 package dao;
 
-import model.product.Product;
-import model.product.ProductCategory;
+import model.Product;
+import model.ProductCategory;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;

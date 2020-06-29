@@ -1,9 +1,9 @@
 package services;
 
 import dao.CartDao;
-import model.cart.Cart;
-import model.cart.CartDto;
-import model.cart.CartItem;
+import model.Cart;
+import model.CartDto;
+import model.CartItem;
 
 import java.util.ArrayList;
 import java.util.Date;

@@ -1,7 +1,7 @@
 package dao;
 
-import model.cart.Cart;
-import model.cart.CartDto;
+import model.Cart;
+import model.CartDto;
 
 import java.sql.*;
 import java.util.ArrayList;

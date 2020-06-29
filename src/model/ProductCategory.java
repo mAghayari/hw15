@@ -1,4 +1,4 @@
-package model.product;
+package model;
 
 public enum ProductCategory {
     ELECTRONICS,

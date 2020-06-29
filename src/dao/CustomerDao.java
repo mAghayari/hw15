@@ -1,7 +1,7 @@
 package dao;
 
-import model.customer.Address;
-import model.customer.Customer;
+import model.Address;
+import model.Customer;
 
 import java.sql.*;
 import java.util.ArrayList;

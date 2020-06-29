@@ -1,4 +1,4 @@
-package model.product;
+package model;
 
 public class Product implements Comparable<Product> {
     private String name;

@@ -1,7 +1,7 @@
 package services;
 
 import dao.AdminDao;
-import model.admin.Admin;
+import model.Admin;
 
 public class AdminServices {
 

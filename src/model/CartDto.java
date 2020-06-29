@@ -1,4 +1,4 @@
-package model.cart;
+package model;
 
 import util.Utility;
 

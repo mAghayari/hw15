@@ -1,6 +1,6 @@
 package view;
 
-import model.product.Product;
+import model.Product;
 
 import java.util.ArrayList;
 import java.util.stream.Collectors;

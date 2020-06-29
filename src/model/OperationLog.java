@@ -1,8 +1,7 @@
-package model.log;
+package model;
 
-import model.customer.Customer;
-import model.customer.CustomerDto;
-import model.cart.CartDto;
+import model.Customer;
+import model.CartDto;
 
 import java.util.ArrayList;
 

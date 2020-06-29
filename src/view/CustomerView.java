@@ -1,6 +1,6 @@
 package view;
 
-import model.customer.Customer;
+import model.Customer;
 import services.CustomerServices;
 
 import java.util.Comparator;

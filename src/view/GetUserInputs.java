@@ -1,6 +1,6 @@
 package view;
 
-import model.customer.Address;
+import model.Address;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;

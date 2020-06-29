@@ -1,6 +1,4 @@
-package model.cart;
-
-import model.product.Product;
+package model;
 
 public class CartItem {
     private Cart cart;

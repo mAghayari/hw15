@@ -1,4 +1,4 @@
-package model.customer;
+package model;
 
 public class CustomerDto {
     private int id;
